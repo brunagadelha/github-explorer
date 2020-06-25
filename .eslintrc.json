@@ -29,11 +29,19 @@
         "prettier"
     ],
     "rules": {
+        "indent": ["error", 4],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": ["error", 4],
         "prettier/prettier": "error", 
         "react-hooks/rules-of-hooks": "error", 
         "react-hooks/exhaustive-deps": "warn", 
-        "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }], 
+        "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+        "react/jsx-one-expression-per-line": "off",  
         "import/prefer-default-export": "off", 
+        "@typescript-eslint/explicit-function-return-type": [
+            "error", 
+            {"allowExpressions": true} // arrow functions
+        ], 
         "import/extensions": [
             "error", 
             "ignorePackages",
